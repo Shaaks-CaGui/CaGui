@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CaGui</string>
+    <string name="title_activity_dasboard">DasboardActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_explore">Explore</string>
+    <string name="title_faqs">FAQs</string>
+    <string name="title_admissions">Admissions</string>
+</resources>
