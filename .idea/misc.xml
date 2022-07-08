@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/card_background.xml" value="0.2115" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/round_shape_sheet.xml" value="0.2115" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/search_background.xml" value="0.2115" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/search_background_explore.xml" value="0.2115" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/search_background_faqs.xml" value="0.2115" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/activity_dasboard.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/activity_dashboard.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/activity_fake.xml" value="0.22826086956521738" />
@@ -11,6 +16,7 @@
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/fragment_explore.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/fragment_faqs.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/fragment_home.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/item_list_layout.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
       </map>
     </option>

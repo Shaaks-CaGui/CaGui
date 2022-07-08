@@ -7,4 +7,7 @@
     <string name="title_explore">Explore</string>
     <string name="title_faqs">FAQs</string>
     <string name="title_admissions">Admissions</string>
+    <string name="admissions">Admissions</string>
+    <string name="faqs">FAQs</string>
+    <string name="Answer_1">Yes,students with visual/learning impairment can also attempt the test</string>
 </resources>

@@ -13,6 +13,8 @@ class HomeFragment : Fragment() {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
 
+
+        activity?.window!!.statusBarColor = activity!!.getColor(R.color.third_color)
     }
 
     override fun onCreateView(

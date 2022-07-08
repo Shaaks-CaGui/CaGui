@@ -13,6 +13,8 @@ class AdmissionFragment : Fragment() {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
 
+
+        activity?.window!!.statusBarColor = activity!!.getColor(R.color.first_color)
     }
 
     override fun onCreateView(

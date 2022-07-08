@@ -8,10 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="first_color">#F8F8F8</color>
-    <color name="second_color">#F9E2D9</color>
-    <color name="third_color">#FFB6B9</color>
-    <color name="fourth_color">#8AC6D1</color>
-    <color name="fifth_color">#BBDED6</color>
+    <color name="first_color">#7382BB</color>
+    <color name="second_color">#51C3FE</color>
+    <color name="third_color">#F9AE2A</color>
+    <color name="fourth_color">#9EC0D1</color>
+    <color name="fifth_color">#61DDDF</color>
 
 </resources>

@@ -1,11 +1,10 @@
 package com.sparklead.cagui.ui.fragments
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import androidx.fragment.app.Fragment
 import com.sparklead.cagui.R
+
 
 class ExploreFragment : Fragment() {
 
@@ -13,6 +12,7 @@ class ExploreFragment : Fragment() {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
 
+        activity?.window!!.statusBarColor = activity!!.getColor(R.color.second_color)
     }
 
     override fun onCreateView(
