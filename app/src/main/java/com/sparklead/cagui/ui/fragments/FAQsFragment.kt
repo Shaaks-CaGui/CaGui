@@ -71,15 +71,34 @@ class FAQsFragment : Fragment() {
             "question2",
             "question3",
             "question4",
-            "question5"
+            "question5",
+            "question6",
+            "question7",
+            "question8",
+            "question9",
+            "question10",
+            "question11",
+            "question12",
+            "question13",
+            "question14",
+            "question15"
         )
-
         answers = arrayListOf(
             "First",
             "Second",
-            "third",
-            "fourth",
-            "fifth"
+            "Third",
+            "Fourth",
+            "Fifth",
+            "Sixth",
+            "Seventh",
+            "Eight",
+            "Ninth",
+            "Tenth",
+            "Eleventh",
+            "Twelfth",
+            "Thirteen",
+            "Fourteen",
+            "Fifteen"
         )
 
         for(i in questions.indices){
