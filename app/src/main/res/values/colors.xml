@@ -10,8 +10,10 @@
 
     <color name="first_color">#7382BB</color>
     <color name="second_color">#51C3FE</color>
-    <color name="third_color">#F9AE2A</color>
+    <color name="third_color">#3C42AF</color>
     <color name="fourth_color">#9EC0D1</color>
     <color name="fifth_color">#61DDDF</color>
+
+    <color name="testing">#ff9f1c</color>
 
 </resources>

@@ -10,7 +10,7 @@
 
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar_register_activity"
+        android:id="@+id/toolbar_explore_fragment"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +35,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_register_activity"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_explore_fragment"
         android:background="@drawable/round_shape_sheet"
         android:elevation="40sp"
         android:orientation="vertical"
@@ -68,6 +68,7 @@
 
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/cv_accounting"
                             android:layout_width="0sp"
                             android:layout_weight="1"
                             android:layout_height="wrap_content"
@@ -107,6 +108,7 @@
 
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_aerospace"
                         android:layout_width="0sp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
@@ -147,6 +149,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_agriculture"
                         android:layout_width="0sp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
@@ -192,6 +195,7 @@
 
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_aquaculture"
                         android:layout_width="0sp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"

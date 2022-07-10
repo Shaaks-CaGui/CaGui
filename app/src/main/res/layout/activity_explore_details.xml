@@ -4,24 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.AdmissionFragment"
-    android:background="@color/first_color"
+    tools:context=".ui.activities.ExploreDetailsActivity"
+    android:background="@color/second_color"
     >
-
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar_register_activity"
+        android:id="@+id/toolbar_Explore_activity_details"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        >
 
         <TextView
+            android:id="@+id/tv_title_explore_details"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:padding="7sp"
-            android:text="@string/admissions"
+            android:text="Explore"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="26sp" />
@@ -34,17 +35,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_register_activity"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_Explore_activity_details"
         android:background="@drawable/round_shape_sheet"
         android:elevation="40sp"
         android:orientation="vertical"
         >
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/test4"
-            />
-
 
     </LinearLayout>
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

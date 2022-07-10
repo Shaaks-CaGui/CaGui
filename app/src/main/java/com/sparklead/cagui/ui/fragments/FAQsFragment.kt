@@ -8,9 +8,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.sparklead.cagui.R
-import com.sparklead.cagui.ui.activities.Questions
+import com.sparklead.cagui.models.Questions
 import com.sparklead.cagui.ui.adapters.QuestionsListAdapter
-import kotlinx.android.synthetic.main.fragment_faqs.*
 
 
 class FAQsFragment : Fragment() {

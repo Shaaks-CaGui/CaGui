@@ -3,21 +3,36 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/button_background.xml" value="0.2305" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/card_background.xml" value="0.2115" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/ic_vector_settings.xml" value="0.2305" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/indicator_active_background.xml" value="0.2305" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/indicator_inactive_background.xml" value="0.2305" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/next_background.xml" value="0.2305" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/next_background_outer.xml" value="0.2305" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/round_shape_sheet.xml" value="0.2115" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/search_background.xml" value="0.2115" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/search_background_explore.xml" value="0.2115" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/search_background_faqs.xml" value="0.2115" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/view_pager_background.xml" value="0.2305" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/activity_dasboard.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/activity_dashboard.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/activity_explore_details.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/activity_fake.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/activity_intro.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/activity_setting.xml" value="0.264" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/activity_splash_screen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/content_setting.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/fragment_admission.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/fragment_explore.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/fragment_faqs.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/fragment_home.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/item_list_layout.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/onboarding_item_container.xml" value="0.253125" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/menu/dashboard_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/menu/home_menu.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

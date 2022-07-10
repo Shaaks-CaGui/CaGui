@@ -4,20 +4,91 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/third_color"
     tools:context=".ui.fragments.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_register_activity"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:text="Home"
-        android:textSize="20sp"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Hi, Aditya"
+                android:layout_marginStart="6sp"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:layout_width="0sp"
+                android:layout_weight="0.33"
+                android:padding="6sp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile_icon"
+                />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_marginTop="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_register_activity"
+        android:background="@drawable/round_shape_sheet"
+        android:elevation="40sp"
+        android:orientation="vertical"
+        >
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18sp"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15sp"
+                app:cardCornerRadius="40sp"
+                >
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/image_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    app:iss_auto_cycle="true"
+                    app:iss_delay="1000"
+                    app:iss_corner_radius="5"
+                    app:iss_period="1000"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
