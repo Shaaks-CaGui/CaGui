@@ -22,7 +22,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:padding="7sp"
-            android:text="Explore"
+            android:text="Title"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="26sp" />
@@ -40,6 +40,60 @@
         android:elevation="40sp"
         android:orientation="vertical"
         >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            app:cardCornerRadius="20sp"
+            app:cardElevation="15sp"
+            android:outlineSpotShadowColor="@color/second_color"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="15sp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:src="@drawable/aerospace"
+                    />
+                <TextView
+                    android:id="@+id/tv_title_heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textSize="18sp"
+                    android:textColor="@color/second_color"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/expand_string_test1"
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_faq_questions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/item_list_type_branches"
+                />
+        </FrameLayout>
 
     </LinearLayout>
 

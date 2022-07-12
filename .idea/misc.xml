@@ -3,32 +3,48 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable-v24/drawable_gender_tab_selector.xml" value="0.236" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable-v24/drawable_gender_tab_text_color_selector.xml" value="0.236" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/background_edt.xml" value="0.236" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/button_background.xml" value="0.2305" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/button_background_view_details.xml" value="0.236" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/card_background.xml" value="0.2115" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/ic_baseline_alternate_email_24.xml" value="0.236" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.236" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.236" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/ic_vector_settings.xml" value="0.2305" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/indicator_active_background.xml" value="0.2305" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/indicator_inactive_background.xml" value="0.2305" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/next_background.xml" value="0.2305" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/next_background_outer.xml" value="0.2305" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/option_background_style.xml" value="0.236" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/orange_background.xml" value="0.236" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/purple_background.xml" value="0.236" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/round_shape_sheet.xml" value="0.2115" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/search_background.xml" value="0.2115" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/search_background_explore.xml" value="0.2115" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/search_background_faqs.xml" value="0.2115" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/view_pager_background.xml" value="0.2305" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout-v28/activity_explore_details.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/activity_dasboard.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/activity_dashboard.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/activity_explore_details.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/activity_fake.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/activity_forget_password.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/activity_intro.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/activity_setting.xml" value="0.264" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/activity_sign_in.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/activity_sign_up.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/activity_splash_screen.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/content_setting.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/fragment_admission.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/fragment_explore.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/fragment_faqs.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/fragment_home.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/item_list_faqs.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/item_list_layout.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/item_list_type_branches.xml" value="0.253125" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/onboarding_item_container.xml" value="0.253125" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/menu/dashboard_menu.xml" value="0.25416666666666665" />

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/header_layout"
+    android:background="@drawable/search_background_faqs"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8sp"
+    android:layout_marginLeft="8sp"
+    android:layout_marginRight="8sp"
+    android:layout_gravity="top"
+    android:orientation="vertical"
+    android:padding="10sp">
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_item_image"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:scaleType="fitXY"
+            android:src="@drawable/question"
+            >
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:orientation="vertical"
+        android:padding="10sp"
+        app:layout_constraintEnd_toStartOf="@id/ll_open"
+        app:layout_constraintStart_toEndOf="@id/ll_item_image"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:text="Can students with visual/hearing impairment also attempt the test?" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_open"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10sp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:id="@+id/iv_open_button"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/down_arrow"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/extended_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30sp"
+        android:layout_marginStart="70sp"
+        android:layout_marginEnd="30sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/extended_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Answer_1"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

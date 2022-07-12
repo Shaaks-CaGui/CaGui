@@ -63,4 +63,7 @@ dependencies {
 
     implementation 'com.google.android.material:material:1.7.0-alpha02'
 
+    implementation 'com.github.gifffert:ExpandableTextView:0.1.6'
+
+
 }

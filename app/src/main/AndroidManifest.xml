@@ -17,13 +17,19 @@
         android:theme="@style/Theme.CaGui"
         tools:targetApi="31">
         <activity
-            android:name=".ui.activities.ExploreDetailsActivity"
+            android:name=".ui.activities.ForgetPasswordActivity"
             android:exported="false"
-            />
+            android:theme="@style/Theme.CaGui_signup"
+            android:windowSoftInputMode="adjustResize"/>
         <activity
-            android:name=".ui.activities.IntroActivity"
+            android:name=".ui.activities.SignUpActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CaGui_signup"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.activities.SignInActivity"
             android:exported="true"
-            android:theme="@style/Theme.CaGui_white">
+            android:theme="@style/Theme.CaGui_signup">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,8 +37,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".ui.activities.ExploreDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.IntroActivity"
+            android:exported="true"
+            android:theme="@style/Theme.CaGui_white"></activity>
+        <activity
             android:name=".ui.activities.SplashScreenActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ui.activities.SettingActivity"
             android:exported="false"

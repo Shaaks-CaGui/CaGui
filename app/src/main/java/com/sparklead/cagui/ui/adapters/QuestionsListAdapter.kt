@@ -18,7 +18,7 @@ class QuestionsListAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val item = LayoutInflater.from(parent.context).inflate(
-            R.layout.item_list_layout,
+            R.layout.item_list_faqs,
             parent,
             false
         )

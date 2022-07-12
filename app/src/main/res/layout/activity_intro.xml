@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/second_color"
+    android:background="@color/third_color"
     tools:context=".ui.activities.IntroActivity">
 
     <androidx.viewpager2.widget.ViewPager2
@@ -35,7 +35,7 @@
         android:layout_marginEnd="20sp"
         android:text="Skip"
         android:textSize="16sp"
-        android:textColor="@color/second_color"
+        android:textColor="@color/third_color"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

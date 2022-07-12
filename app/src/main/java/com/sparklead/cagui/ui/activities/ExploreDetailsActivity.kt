@@ -19,6 +19,7 @@ class ExploreDetailsActivity : AppCompatActivity() {
         mTitle = intent.getStringExtra(Constants.EXTRA_TITLE)!!
 
         tv_title_explore_details.text = mTitle
+        tv_title_heading.text = mTitle
     }
 
 }
