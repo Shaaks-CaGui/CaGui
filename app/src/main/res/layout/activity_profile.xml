@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.ProfileActivity"
+    android:background="#EDE7F8"
+    android:orientation="vertical"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_register_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="7sp"
+            android:text="Profile"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="16sp"
+        android:textColor="#9f88e5"
+        app:startIconDrawable="@drawable/ic_baseline_person_24"
+        android:textColorHint="#9f88e5"
+        app:boxStrokeColor="#9f88e5"
+        app:endIconMode="clear_text"
+        app:endIconTint="#9f88e5"
+        app:startIconTint="#9f88e5"
+        app:hintTextColor="#9f88e5">
+
+        <EditText
+            android:id="@+id/et_name_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginBottom="20sp"
+            android:imeOptions="actionGo"
+            android:cursorVisible="true"
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="8sp"
+        android:textColor="#9f88e5"
+        app:startIconDrawable="@drawable/ic_baseline_call_24"
+        android:textColorHint="#9f88e5"
+        app:boxStrokeColor="#9f88e5"
+        app:endIconMode="clear_text"
+        app:endIconTint="#9f88e5"
+        app:startIconTint="#9f88e5"
+        app:hintTextColor="#9f88e5">
+
+        <EditText
+            android:id="@+id/et_phoneNo_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone No"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginBottom="20sp"
+            android:imeOptions="actionGo"
+            android:cursorVisible="true"
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="8sp"
+        android:textColor="#9f88e5"
+        app:startIconDrawable="@drawable/ic_baseline_person_24"
+        android:textColorHint="#9f88e5"
+        app:boxStrokeColor="#9f88e5"
+        app:endIconMode="clear_text"
+        app:endIconTint="#9f88e5"
+        app:startIconTint="#9f88e5"
+        app:hintTextColor="#9f88e5">
+
+        <EditText
+            android:id="@+id/et_Current_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginBottom="20sp"
+            android:imeOptions="actionGo"
+            android:cursorVisible="true"
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

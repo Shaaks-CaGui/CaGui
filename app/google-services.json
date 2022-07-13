@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "113686606768",
+    "project_id": "cagui-4a985",
+    "storage_bucket": "cagui-4a985.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113686606768:android:65b43ec2d4e75ba499dc75",
+        "android_client_info": {
+          "package_name": "com.sparklead.cagui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "113686606768-stdm6h8jrk26gr21j6lajddkip0obbnf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sparklead.cagui",
+            "certificate_hash": "e7aaac6baf92d83284f5b159ead90daa707e207e"
+          }
+        },
+        {
+          "client_id": "113686606768-ggs93in2uu6oorf997c25cb99cgo4hpa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPeSCXHH7WwV32k8w98nHMLa6LrOKV7Gg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "113686606768-ggs93in2uu6oorf997c25cb99cgo4hpa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -23,4 +23,14 @@
     <string name="title_activity_setting">SettingActivity</string>
     <string name="expand_string_test1">A language of business ,that not just a number-crunching but a humble beginning in the business world. A system in which the financial information is identified ,recorded, analyzed, audited and reported for the use of decision-makers.</string>
     <string name="shrink_test1">A language of business, that not just a number- crunching but a humble beginning </string>
+    <string name="forget_password"> Enter your username and e-mail address \n we\'ll send you an email to reset your \n password</string>
+
+
+    <string name="please_wait">Please Wait</string>
+    <string name="err_msg_first_name">Please enter your full name. </string>
+    <string name="err_msg_email">Please enter your email. </string>
+    <string name="err_msg_password">Please enter password. </string>
+    <string name="err_msg_checkbox_confirm">Please accept terms and conditions.</string>
+    <string name="err_msg_agree">Please agree terms and condition</string>
+
 </resources>
