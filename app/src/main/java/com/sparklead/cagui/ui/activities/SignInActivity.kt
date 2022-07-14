@@ -103,6 +103,9 @@ class SignInActivity : BaseActivity(),View.OnClickListener {
     fun userLoggedInSuccess(user: User){
         hideProgressDialog()
 
+        println("Yes logged check")
+
+
         if(user.profileCompleted==0) {
             Handler(Looper.getMainLooper()).postDelayed({
                 val intent = Intent(this, ProfileActivity::class.java)

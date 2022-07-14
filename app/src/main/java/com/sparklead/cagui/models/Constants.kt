@@ -17,7 +17,18 @@ object Constants {
     const val EXTRA_USER_DETAILS : String = "extra_user_details"
 
     const val PICK_IMAGE_REQUEST_CODE = 1
-
+    const val READ_STORAGE_PERMISSION_CODE = 2
+    const val NAME: String = "name"
+    const val MALE : String = "Male"
+    const val FEMALE : String = "Female"
+    const val MOBILE : String = "phone"
+    const val GENDER : String = "gender"
+    const val CURRENT_CLASS : String = "currentClass"
+    const val STREAM : String = "stream"
+    const val INTERESTS :String = "interests"
+    const val IMAGE :String ="image"
+    const val PROFILE_COMPLETED :String ="profileCompleted"
+    const val USER_PROFILE_IMAGE :String = "user_profile_image"
 
     fun showImageChooser(activity : Activity)
     {

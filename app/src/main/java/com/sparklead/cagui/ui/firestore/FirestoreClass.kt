@@ -1,14 +1,17 @@
 package com.sparklead.cagui.ui.firestore
 
 import android.app.Activity
-import android.content.Context
-import android.content.SharedPreferences
+import android.net.Uri
 import android.util.Log
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.SetOptions
+import com.google.firebase.storage.FirebaseStorage
+import com.google.firebase.storage.StorageReference
 import com.sparklead.cagui.models.Constants
 import com.sparklead.cagui.models.User
+import com.sparklead.cagui.ui.activities.ProfileActivity
+import com.sparklead.cagui.ui.activities.SettingActivity
 import com.sparklead.cagui.ui.activities.SignInActivity
 import com.sparklead.cagui.ui.activities.SignUpActivity
 
@@ -38,7 +41,7 @@ class FirestoreClass {
             }
     }
 
-    fun getCurrentUserId() :String {
+    private fun getCurrentUserId() :String {
 
         //An Instance of currentUser using FirebaseAuth
         val currentUser = FirebaseAuth.getInstance().currentUser
@@ -54,7 +57,7 @@ class FirestoreClass {
 
     }
 
-    fun getUserDetails(activity: SignInActivity){
+    fun getUserDetails(activity: Activity){
 
         //Here we pass the collection name from which we wants the data.
         mFirestore.collection(Constants.USERS)
@@ -74,15 +77,110 @@ class FirestoreClass {
 //                )
 //
 //                val editor : SharedPreferences.Editor = sharedPreferences.edit()
-//                //key : logged_in_success :Aditya Gupta
+////                key : logged_in_success :Aditya Gupta
 //                editor.putString(Constants.LOGGED_IN_USERNAME," ${user.name}")
 //                editor.apply()
-//                //end
+////                //end
+                when(activity){
+                    is SignInActivity ->
+                    {
+                        //call a function of base activity for transferring the result to it
+                        activity.userLoggedInSuccess(user)
 
-                activity.userLoggedInSuccess(user)
+                    }
+                    is SettingActivity ->
+                    {
+//                        activity.userDetailsSuccess(user)
+                    }
+                }
 
             }
         //end
     }
+
+    fun updateUserProfileData(activity: Activity,userHashMap: HashMap<String,Any>)
+    {
+        mFirestore.collection(Constants.USERS)
+            .document(getCurrentUserId())
+            .update(userHashMap)
+            .addOnCompleteListener{
+
+                println("Yes profile updated")
+                when(activity)
+                {
+                    is ProfileActivity ->
+                    {
+                        activity.userProfileUpdateSuccess()
+                        println("Yes")
+                    }
+                }
+            }
+            .addOnFailureListener{ e ->
+                when(activity)
+                {
+                    is ProfileActivity ->
+                    {
+                        activity.hideProgressDialog()
+                    }
+                }
+                Log.e(
+                    activity.javaClass.simpleName,"Error while updating the user_id details",e
+                )
+            }
+    }
+
+
+    fun uploadImageToCloudStorage(activity: Activity, imageFileURI: Uri?, imageType : String ) {
+
+        //getting the storage reference
+        val sRef: StorageReference = FirebaseStorage.getInstance().reference.child(
+            imageType + System.currentTimeMillis() + "."
+                    + Constants.getFileExtension(
+                activity,
+                imageFileURI
+            )
+        )
+
+        //adding the file to reference
+        sRef.putFile(imageFileURI!!)
+            .addOnSuccessListener { taskSnapshot ->
+                // The image upload is success
+                Log.e(
+                    "Firebase Image URL",
+                    taskSnapshot.metadata!!.reference!!.downloadUrl.toString()
+                )
+
+                // Get the downloadable url from the task snapshot
+                taskSnapshot.metadata!!.reference!!.downloadUrl
+                    .addOnSuccessListener { uri ->
+                        Log.e("Downloadable Image URL", uri.toString())
+
+                        // TODO Step 8: Pass the success result to base class.
+                        // START
+                        // Here call a function of base activity for transferring the result to it.
+                        when (activity) {
+                            is ProfileActivity -> {
+                                activity.imageUploadSuccess(uri.toString())
+                            }
+                        }
+                        // END
+                    }
+            }
+            .addOnFailureListener { exception ->
+
+                // Hide the progress dialog if there is any error. And print the error in log.
+                when (activity) {
+                    is ProfileActivity -> {
+                        activity.hideProgressDialog()
+                    }
+                }
+                Log.e("ABCD",
+                    exception.message,
+                    exception
+                )
+            }
+    }
+
+
 
 }
