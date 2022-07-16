@@ -8,7 +8,7 @@ import android.webkit.MimeTypeMap
 
 object Constants {
 
-    var EXTRA_TITLE : String = "title"
+    val EXTRA_TITLE : String = "title"
     const val USERS :String = "users"
 
 
@@ -29,6 +29,11 @@ object Constants {
     const val IMAGE :String ="image"
     const val PROFILE_COMPLETED :String ="profileCompleted"
     const val USER_PROFILE_IMAGE :String = "user_profile_image"
+
+    const val BRANCH : String = "branch"
+    const val ACCOUNTING : String = "Accounting"
+    const val EXTRA_BRANCH_TITLE : String = "extra_branch_title"
+    const val EXTRA_BRANCH_NAME : String = "extra_branch_title"
 
     fun showImageChooser(activity : Activity)
     {

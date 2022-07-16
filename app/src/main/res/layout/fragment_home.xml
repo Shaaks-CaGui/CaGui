@@ -32,7 +32,8 @@
                 android:textColor="@color/white"
                 android:textSize="25sp" />
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_image_home"
                 android:layout_width="0sp"
                 android:layout_weight="0.33"
                 android:padding="6sp"
@@ -63,26 +64,71 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             >
-            <androidx.cardview.widget.CardView
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="18sp"-->
+<!--                android:layout_marginLeft="15sp"-->
+<!--                android:layout_marginRight="15sp"-->
+<!--                app:cardCornerRadius="40sp"-->
+<!--                >-->
+
+<!--                <com.denzcoskun.imageslider.ImageSlider-->
+<!--                    android:id="@+id/image_slider"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="150sp"-->
+<!--                    app:iss_auto_cycle="true"-->
+<!--                    app:iss_delay="1000"-->
+<!--                    app:iss_corner_radius="5"-->
+<!--                    app:iss_period="1000"-->
+<!--                    />-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="18sp"
-                android:layout_marginLeft="15sp"
-                android:layout_marginRight="15sp"
-                app:cardCornerRadius="40sp"
-                >
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bottom_banner" />
 
-                <com.denzcoskun.imageslider.ImageSlider
-                    android:id="@+id/image_slider"
-                    android:layout_width="match_parent"
-                    android:layout_height="150sp"
-                    app:iss_auto_cycle="true"
-                    app:iss_delay="1000"
-                    app:iss_corner_radius="5"
-                    app:iss_period="1000"
-                    />
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome To CaGui"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/textView12"
+                    app:layout_constraintEnd_toEndOf="@+id/textView12"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/textView12"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upgrade Your Account"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.819"
+                    app:layout_constraintStart_toStartOf="@+id/imageView10"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.657" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 

@@ -20,9 +20,9 @@ class SplashScreenActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
 
 
-//        Handler(Looper.getMainLooper()).postDelayed({
-//            startActivity(Intent(this, DashboardActivity::class.java))
-//            finish()
-//        },2000)
+        Handler(Looper.getMainLooper()).postDelayed({
+            startActivity(Intent(this, DashboardActivity::class.java))
+            finish()
+        },2000)
     }
 }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activities.ExploreDetailsActivity"
+    tools:context=".ui.activities.BranchInfoActivity"
     android:background="@color/second_color"
     >
     <androidx.appcompat.widget.Toolbar
@@ -17,7 +17,7 @@
         >
 
         <TextView
-            android:id="@+id/tv_title_explore_details"
+            android:id="@+id/tv_title_explore_details_info"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -40,66 +40,19 @@
         android:elevation="40sp"
         android:orientation="vertical"
         >
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20sp"
-            android:layout_marginLeft="20sp"
-            android:layout_marginRight="20sp"
-            app:cardCornerRadius="20sp"
-            app:cardElevation="15sp"
-            android:outlineSpotShadowColor="@color/second_color"
-            >
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="15sp"
-                >
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="150sp"
-                    android:src="@drawable/aerospace"
-                    />
-                <TextView
-                    android:id="@+id/tv_title_heading"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Title"
-                    android:textSize="18sp"
-                    android:textColor="@color/second_color"
-                    />
 
-                <TextView
-                    android:id="@+id/tv_title_explore_details_details"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text=""
-                    android:textSize="12sp"
-                    />
-
-            </LinearLayout>
-
-
-
-
-        </androidx.cardview.widget.CardView>
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             >
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_branch_list"
+                android:id="@+id/rv_details_info"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                tools:listitem="@layout/item_list_type_branches"
+                tools:listitem="@layout/item_list_details_info"
                 />
         </FrameLayout>
-
     </LinearLayout>
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
