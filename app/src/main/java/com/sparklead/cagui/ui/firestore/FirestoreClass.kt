@@ -342,20 +342,46 @@ class FirestoreClass {
 
                 var overview :String = " "
                 var path :String = " "
+                var responsibilities : String = " "
+                var skills : String = " "
+                var careerProspects : String = " "
+                var companies : String = " "
+                var prosAndCons : String = " "
+                var futureGrowth : String = " "
+                var alternateCareer : String = " "
+                var averageSalary : String = " "
 
                 val titleHead = document.toObject(BranchItem::class.java)!!
+
                 if(titleHead.branch1.tag == branch_name){
                     overview = titleHead.branch1.overview
                     path = titleHead.branch1.path
+                    responsibilities = titleHead.branch1.responsibilities
+                    skills = titleHead.branch1.skills
+                    careerProspects = titleHead.branch1.careerProspects
+                    companies = titleHead.branch1.companies
+                    prosAndCons = titleHead.branch1.prosAndCons
+                    futureGrowth = titleHead.branch1.futureGrowth
+                    alternateCareer = titleHead.branch1.alternateCareer
+                    averageSalary = titleHead.branch1.averageSalary
                 }
                 if(titleHead.branch2.tag == branch_name){
                     overview = titleHead.branch2.overview
                     path = titleHead.branch2.path
+                    responsibilities = titleHead.branch2.responsibilities
+                    skills = titleHead.branch2.skills
+                    careerProspects = titleHead.branch2.careerProspects
+                    companies = titleHead.branch2.companies
+                    prosAndCons = titleHead.branch2.prosAndCons
+                    futureGrowth = titleHead.branch2.futureGrowth
+                    alternateCareer = titleHead.branch2.alternateCareer
+                    averageSalary = titleHead.branch2.averageSalary
+
                 }
 
                 when(activity){
                     is BranchInfoActivity ->{
-                        activity.populateListUI(overview,path)
+                        activity.populateListUI(overview,path,responsibilities,skills,careerProspects,companies,prosAndCons,futureGrowth,alternateCareer,averageSalary)
                     }
                 }
 

@@ -14,9 +14,16 @@ import kotlinx.android.synthetic.main.item_list_details_info.view.*
 
 class BranchInfoAdapter(
     private val context: Context,
-    private var tisVisible: Boolean,
     private val overview : String,
-    private val path :String
+    private val path :String,
+    private val responsibilities:String,
+    private val skills:String,
+    private val careerProspects:String,
+    private val companies:String,
+    private val prosAndCons:String,
+    private val futureGrowth:String,
+    private val alternateCareer:String,
+    private val averageSalary:String
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>(){
 
     var isVisible1 = false
@@ -75,6 +82,134 @@ class BranchInfoAdapter(
                 holder.itemView.iv_visible_arrow2.setImageResource(R.drawable.down_arrow)
             }
             holder.itemView.tv_details_info2.text = path
+
+            //responsibility
+
+            holder.itemView.tv_details_info3.visibility = if(isVisible3) View.VISIBLE else View.GONE
+            holder.itemView.ll_line3.visibility = if(isVisible3) View.VISIBLE else View.GONE
+            holder.itemView.iv_visible_arrow3.setOnClickListener {
+                isVisible3 = !isVisible3
+                notifyItemChanged(position)
+            }
+            if(isVisible3){
+                holder.itemView.iv_visible_arrow3.setImageResource(R.drawable.up_arrow)
+            }
+            else{
+                holder.itemView.iv_visible_arrow3.setImageResource(R.drawable.down_arrow)
+            }
+            holder.itemView.tv_details_info3.text = responsibilities
+
+            //skills
+
+            holder.itemView.tv_details_info4.visibility = if(isVisible4) View.VISIBLE else View.GONE
+            holder.itemView.ll_line4.visibility = if(isVisible4) View.VISIBLE else View.GONE
+            holder.itemView.iv_visible_arrow4.setOnClickListener {
+                isVisible4 = !isVisible4
+                notifyItemChanged(position)
+            }
+            if(isVisible4){
+                holder.itemView.iv_visible_arrow4.setImageResource(R.drawable.up_arrow)
+            }
+            else{
+                holder.itemView.iv_visible_arrow4.setImageResource(R.drawable.down_arrow)
+            }
+            holder.itemView.tv_details_info4.text = skills
+
+            // career prospects
+
+            holder.itemView.tv_details_info5.visibility = if(isVisible5) View.VISIBLE else View.GONE
+            holder.itemView.ll_line5.visibility = if(isVisible5) View.VISIBLE else View.GONE
+            holder.itemView.iv_visible_arrow5.setOnClickListener {
+                isVisible5 = !isVisible5
+                notifyItemChanged(position)
+            }
+            if(isVisible5){
+                holder.itemView.iv_visible_arrow5.setImageResource(R.drawable.up_arrow)
+            }
+            else{
+                holder.itemView.iv_visible_arrow5.setImageResource(R.drawable.down_arrow)
+            }
+            holder.itemView.tv_details_info5.text = careerProspects
+
+            // companies
+
+            holder.itemView.tv_details_info6.visibility = if(isVisible6) View.VISIBLE else View.GONE
+            holder.itemView.ll_line6.visibility = if(isVisible6) View.VISIBLE else View.GONE
+            holder.itemView.iv_visible_arrow6.setOnClickListener {
+                isVisible6 = !isVisible6
+                notifyItemChanged(position)
+            }
+            if(isVisible6){
+                holder.itemView.iv_visible_arrow6.setImageResource(R.drawable.up_arrow)
+            }
+            else{
+                holder.itemView.iv_visible_arrow6.setImageResource(R.drawable.down_arrow)
+            }
+            holder.itemView.tv_details_info6.text = companies
+
+            // pros and cons
+
+            holder.itemView.tv_details_info7.visibility = if(isVisible7) View.VISIBLE else View.GONE
+            holder.itemView.ll_line7.visibility = if(isVisible7) View.VISIBLE else View.GONE
+            holder.itemView.iv_visible_arrow7.setOnClickListener {
+                isVisible7 = !isVisible7
+                notifyItemChanged(position)
+            }
+            if(isVisible7){
+                holder.itemView.iv_visible_arrow7.setImageResource(R.drawable.up_arrow)
+            }
+            else{
+                holder.itemView.iv_visible_arrow7.setImageResource(R.drawable.down_arrow)
+            }
+            holder.itemView.tv_details_info7.text = prosAndCons
+
+            //future growth
+
+            holder.itemView.tv_details_info8.visibility = if(isVisible8) View.VISIBLE else View.GONE
+            holder.itemView.ll_line8.visibility = if(isVisible8) View.VISIBLE else View.GONE
+            holder.itemView.iv_visible_arrow8.setOnClickListener {
+                isVisible8 = !isVisible8
+                notifyItemChanged(position)
+            }
+            if(isVisible8){
+                holder.itemView.iv_visible_arrow8.setImageResource(R.drawable.up_arrow)
+            }
+            else{
+                holder.itemView.iv_visible_arrow8.setImageResource(R.drawable.down_arrow)
+            }
+            holder.itemView.tv_details_info8.text = futureGrowth
+
+            // alternate career
+
+            holder.itemView.tv_details_info9.visibility = if(isVisible9) View.VISIBLE else View.GONE
+            holder.itemView.ll_line9.visibility = if(isVisible9) View.VISIBLE else View.GONE
+            holder.itemView.iv_visible_arrow9.setOnClickListener {
+                isVisible9 = !isVisible9
+                notifyItemChanged(position)
+            }
+            if(isVisible9){
+                holder.itemView.iv_visible_arrow9.setImageResource(R.drawable.up_arrow)
+            }
+            else{
+                holder.itemView.iv_visible_arrow9.setImageResource(R.drawable.down_arrow)
+            }
+            holder.itemView.tv_details_info9.text = alternateCareer
+
+            // average salary
+
+            holder.itemView.tv_details_info10.visibility = if(isVisible10) View.VISIBLE else View.GONE
+            holder.itemView.ll_line10.visibility = if(isVisible10) View.VISIBLE else View.GONE
+            holder.itemView.iv_visible_arrow10.setOnClickListener {
+                isVisible10 = !isVisible10
+                notifyItemChanged(position)
+            }
+            if(isVisible10){
+                holder.itemView.iv_visible_arrow10.setImageResource(R.drawable.up_arrow)
+            }
+            else{
+                holder.itemView.iv_visible_arrow10.setImageResource(R.drawable.down_arrow)
+            }
+            holder.itemView.tv_details_info10.text = averageSalary
 
 
 

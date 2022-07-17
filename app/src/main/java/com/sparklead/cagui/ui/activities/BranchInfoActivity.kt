@@ -44,13 +44,13 @@ class BranchInfoActivity : BaseActivity() {
 
     }
 
-    fun populateListUI(overview:String,path:String){
+    fun populateListUI(overview:String,path:String,responsibilities:String,skills:String,careerProspects:String,companies:String,prosAndCons:String,futureGrowth:String,alternateCareer:String,averageSalary:String){
         hideProgressDialog()
 
         rv_details_info.layoutManager = LinearLayoutManager(this)
         rv_details_info.setHasFixedSize(true)
 
-        val branchInfoAdapter = BranchInfoAdapter(this,false,overview,path)
+        val branchInfoAdapter = BranchInfoAdapter(this,overview,path,responsibilities,skills,careerProspects,companies,prosAndCons,futureGrowth,alternateCareer,averageSalary)
         rv_details_info.adapter = branchInfoAdapter
     }
 }
