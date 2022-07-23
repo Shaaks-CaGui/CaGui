@@ -91,7 +91,7 @@ class FirestoreClass {
                     }
                     is SettingActivity ->
                     {
-//                        activity.userDetailsSuccess(user)
+                        activity.userDetailsSuccess(user)
                     }
                 }
 
@@ -113,6 +113,10 @@ class FirestoreClass {
                     {
                         activity.userProfileUpdateSuccess()
                         println("Yes")
+                    }
+
+                    is CounselorProfileActivity ->{
+                        activity.userProfileUpdateSuccess()
                     }
                 }
             }
@@ -161,6 +165,9 @@ class FirestoreClass {
                         // Here call a function of base activity for transferring the result to it.
                         when (activity) {
                             is ProfileActivity -> {
+                                activity.imageUploadSuccess(uri.toString())
+                            }
+                            is CounselorProfileActivity ->{
                                 activity.imageUploadSuccess(uri.toString())
                             }
                         }

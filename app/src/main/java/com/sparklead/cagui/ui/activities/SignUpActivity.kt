@@ -57,7 +57,6 @@ class SignUpActivity : BaseActivity() {
                                 "Counselor"
                             },
                             )
-
                         FirestoreClass().registerUser(this@SignUpActivity , user)
 
 //                        FirebaseAuth.getInstance().signOut()
@@ -111,6 +110,5 @@ class SignUpActivity : BaseActivity() {
             FirebaseAuth.getInstance().signOut()
             finish()
         },1000)
-
     }
 }

@@ -153,7 +153,7 @@ class ProfileActivity : BaseActivity() , View.OnClickListener {
             userHashMap[Constants.MOBILE] = mobileNo.toLong()
         }
 
-        if(currentClass.isNotEmpty() && currentClass != mUserDetails.currentClass.toString()){
+        if(currentClass.isNotEmpty() && currentClass != mUserDetails.currentClass){
             userHashMap[Constants.CURRENT_CLASS] = currentClass.toString()
         }
 

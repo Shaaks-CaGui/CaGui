@@ -16,6 +16,9 @@ class User (
     val stream :String= " ",
     val interests : String = " ",
     val gender: String = " ",
-    val profileCompleted:Int = 0
+    val profileCompleted:Int = 0,
+    val linkedin :String = " ",
+    val resume : String = " ",
+    val fieldExpert :String = " "
 
 ):Parcelable

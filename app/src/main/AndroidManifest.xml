@@ -66,12 +66,10 @@
         <activity
             android:name=".ui.activities.SettingActivity"
             android:exported="false"
-            android:label="@string/title_activity_setting"
-            android:theme="@style/Theme.CaGui.NoActionBar" />
+            android:theme="@style/Theme.CaGui_setting"/>
         <activity
             android:name=".ui.activities.DashboardActivity"
-            android:exported="false"
-            android:label="@string/title_activity_dasboard" />
+            android:exported="false" />
         <activity
             android:name=".ui.activities.MainActivity"
             android:exported="false" />
