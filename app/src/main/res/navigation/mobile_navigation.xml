@@ -9,19 +9,34 @@
         android:id="@+id/navigation_home"
         android:name="com.sparklead.cagui.ui.fragments.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_explore"
+            app:destination="@id/navigation_explore"
+            app:enterAnim="@anim/from_left" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_explore"
         android:name="com.sparklead.cagui.ui.fragments.ExploreFragment"
         android:label="@string/title_explore"
-        tools:layout="@layout/fragment_explore" />
+        tools:layout="@layout/fragment_explore" >
+        <action
+            android:id="@+id/action_navigation_explore_to_navigation_admissions"
+            app:destination="@id/navigation_admissions"
+            app:enterAnim="@anim/from_left" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_admissions"
         android:name="com.sparklead.cagui.ui.fragments.AdmissionFragment"
         android:label="@string/title_admissions"
-        tools:layout="@layout/fragment_admission" />
+        tools:layout="@layout/fragment_admission" >
+        <action
+            android:id="@+id/action_navigation_admissions_to_navigation_faqs"
+            app:destination="@id/navigation_faqs"
+            app:enterAnim="@anim/from_left" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_faqs"

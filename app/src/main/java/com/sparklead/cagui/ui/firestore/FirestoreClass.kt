@@ -307,7 +307,6 @@ class FirestoreClass {
 //
 //                val list = document.toObject(BranchItem::class.java)!!
 
-
                 when(activity){
                     is ExploreDetailsActivity ->{
                         activity.populateListUI(titleList,no,details)

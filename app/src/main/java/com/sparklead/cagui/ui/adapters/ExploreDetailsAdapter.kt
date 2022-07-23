@@ -33,14 +33,13 @@ class ExploreDetailsAdapter(
         val model = list[position]
         if(holder is MyViewHolder)
         {
-
             holder.itemView.tv_branch_name.text = model
             val branch = "branch${position+1}"
             holder.itemView.btn_view_details.setOnClickListener {
                 val intent = Intent(context,BranchInfoActivity::class.java)
-                intent.putExtra(Constants.EXTRA_BRANCH_TITLE,model)
                 intent.putExtra(Constants.EXTRA_BRANCH_NAME,branch)
                 intent.putExtra(Constants.EXTRA_TITLE,title)
+                intent.putExtra(Constants.EXTRA_BRANCH_TITLE,model)
                 context.startActivity(intent)
             }
         }

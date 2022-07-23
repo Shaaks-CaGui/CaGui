@@ -33,7 +33,23 @@ object Constants {
     const val BRANCH : String = "branch"
     const val ACCOUNTING : String = "Accounting"
     const val EXTRA_BRANCH_TITLE : String = "extra_branch_title"
-    const val EXTRA_BRANCH_NAME : String = "extra_branch_title"
+    const val EXTRA_BRANCH_NAME : String = "extra_branch_name"
+
+    //counselor
+
+    const val PICK_IMAGE_REQUEST_CODE_COUNSELOR = 1
+    const val READ_STORAGE_PERMISSION_CODE_COUNSELOR = 2
+    const val NAME_COUNSELOR: String = "name"
+    const val MALE_COUNSELOR : String = "Male"
+    const val FEMALE_COUNSELOR : String = "Female"
+    const val MOBILE_COUNSELOR : String = "phone"
+    const val GENDER_COUNSELOR : String = "gender"
+    const val CURRENT_CLASS_COUNSELOR : String = "currentClass"
+    const val STREAM_COUNSELOR : String = "stream"
+    const val INTERESTS_COUNSELOR :String = "interests"
+    const val IMAGE_COUNSELOR :String ="image"
+    const val PROFILE_COMPLETED_COUNSELOR :String ="profileCompleted"
+    const val USER_PROFILE_IMAGE_COUNSELOR :String = "user_profile_image"
 
     fun showImageChooser(activity : Activity)
     {

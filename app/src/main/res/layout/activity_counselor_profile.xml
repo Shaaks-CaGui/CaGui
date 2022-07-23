@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.ProfileActivity"
+    android:background="#EDE7F8"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_counselor_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title_counselor_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="7sp"
+            android:text="Profile"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="25sp"
+        android:layout_marginBottom="20sp"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_counselor_image"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:src="@drawable/profile_icon"
+            android:contentDescription="TODO" />
+    </FrameLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="16sp"
+        android:textColor="#9f88e5"
+        app:startIconDrawable="@drawable/ic_baseline_person_24"
+        android:textColorHint="#9f88e5"
+        app:boxStrokeColor="#9f88e5"
+        app:endIconMode="clear_text"
+        app:endIconTint="#9f88e5"
+        app:startIconTint="#9f88e5"
+        app:hintTextColor="#9f88e5">
+
+        <EditText
+            android:id="@+id/et_name_counselor_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginBottom="10sp"
+            android:imeOptions="actionGo"
+            android:cursorVisible="true"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="8sp"
+        android:textColor="#9f88e5"
+        app:startIconDrawable="@drawable/ic_baseline_call_24"
+        android:textColorHint="#9f88e5"
+        app:boxStrokeColor="#9f88e5"
+        app:endIconMode="clear_text"
+        app:endIconTint="#9f88e5"
+        app:startIconTint="#9f88e5"
+        app:hintTextColor="#9f88e5">
+
+        <EditText
+            android:id="@+id/et_phoneNo_counselor_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone No"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginBottom="10sp"
+            android:imeOptions="actionGo"
+            android:cursorVisible="true"
+            android:inputType="phone"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="8sp"
+        android:textColor="#9f88e5"
+        app:startIconDrawable="@drawable/linkedin"
+        android:textColorHint="#9f88e5"
+        app:boxStrokeColor="#9f88e5"
+        app:endIconMode="clear_text"
+        app:endIconTint="#9f88e5"
+        app:startIconTint="#9f88e5"
+        app:hintTextColor="#9f88e5">
+
+        <EditText
+            android:id="@+id/et_linkedin_counselor_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your Linkedin link"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginBottom="10sp"
+            android:imeOptions="actionGo"
+            android:cursorVisible="true"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="8sp"
+        android:textColor="#9f88e5"
+        app:startIconDrawable="@drawable/resume"
+        android:textColorHint="#9f88e5"
+        app:boxStrokeColor="#9f88e5"
+        app:endIconMode="clear_text"
+        app:endIconTint="#9f88e5"
+        app:startIconTint="#9f88e5"
+        app:hintTextColor="#9f88e5">
+
+        <EditText
+            android:id="@+id/et_resume_counselor_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Résumé (Drive link)"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginBottom="10sp"
+            android:imeOptions="actionGo"
+            android:cursorVisible="true"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="8sp"
+        android:textColor="#9f88e5"
+        app:startIconDrawable="@drawable/ic_baseline_tag_faces_24"
+        android:textColorHint="#9f88e5"
+        app:boxStrokeColor="#9f88e5"
+        app:endIconMode="clear_text"
+        app:endIconTint="#9f88e5"
+        app:startIconTint="#9f88e5"
+        app:hintTextColor="#9f88e5">
+
+        <EditText
+            android:id="@+id/et_expert_counselor_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Field expertise if any"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginBottom="10sp"
+            android:imeOptions="actionGo"
+            android:cursorVisible="true"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp">
+
+        <RadioButton
+            android:id="@+id/rb_counselor_male"
+            android:layout_width="0sp"
+            android:layout_height="40sp"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_gender_tab_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="Male"
+            android:layout_marginRight="4sp"
+            android:textColor="@drawable/drawable_gender_tab_text_color_selector"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_counselor_female"
+            android:layout_width="0sp"
+            android:layout_height="40sp"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_gender_tab_selector"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="Female"
+            android:layout_marginLeft="4sp"
+            android:textColor="@drawable/drawable_gender_tab_text_color_selector"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            />
+
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_counselor_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/orange_background"
+        android:text="Done"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginBottom="10sp"
+        android:paddingLeft="30sp"
+        android:paddingRight="30sp"
+        android:paddingTop="12sp"
+        android:paddingBottom="12sp"
+        android:layout_marginTop="20sp"
+        />
+
+
+</LinearLayout>

@@ -25,11 +25,21 @@ class BranchInfoActivity : BaseActivity() {
 
         supportActionBar?.hide()
 
-        mTitleInfo = intent.getStringExtra(Constants.EXTRA_BRANCH_TITLE)!!
-        mBranch = intent.getStringExtra(Constants.EXTRA_BRANCH_NAME)!!
-        mTitle = intent.getStringExtra(Constants.EXTRA_TITLE)!!
+        if(intent.hasExtra(Constants.EXTRA_BRANCH_NAME)){
+            mTitleInfo = intent.getStringExtra(Constants.EXTRA_BRANCH_NAME)!!
+        }
+        if(intent.hasExtra(Constants.EXTRA_TITLE)){
+            mTitle = intent.getStringExtra(Constants.EXTRA_TITLE)!!
+        }
+        if(intent.hasExtra(Constants.EXTRA_BRANCH_TITLE)){
+            mBranch = intent.getStringExtra(Constants.EXTRA_BRANCH_TITLE)!!
+        }
 
-        tv_title_explore_details_info.text = mTitleInfo
+        tv_title_explore_details_info.text = mBranch
+
+        println(mBranch)
+        println(mTitle)
+        println(mTitleInfo)
     }
 
     override fun onResume() {

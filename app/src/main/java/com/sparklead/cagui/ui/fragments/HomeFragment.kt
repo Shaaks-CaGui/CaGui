@@ -59,6 +59,10 @@ class HomeFragment : BaseFragment() {
 
         GlideLoader(activity!!).loadUserPicture(user.image,user_image_home)
 
+        user_image_home.setOnClickListener {
+            startActivity(Intent(context,SettingActivity::class.java))
+        }
+
     }
 
     override fun onResume() {

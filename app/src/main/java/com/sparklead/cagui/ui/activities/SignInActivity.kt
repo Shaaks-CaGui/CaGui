@@ -103,25 +103,44 @@ class SignInActivity : BaseActivity(),View.OnClickListener {
     fun userLoggedInSuccess(user: User){
         hideProgressDialog()
 
-        println("Yes logged check")
+        if(user.userType=="Student"){
+            if(user.profileCompleted==0) {
+                Handler(Looper.getMainLooper()).postDelayed({
+                    val intent = Intent(this, ProfileActivity::class.java)
+                    intent.putExtra(Constants.EXTRA_USER_DETAILS,user)
+                    startActivity(intent)
+                    finish()
+                }, 200)
+            }
+            else
+            {
+                Handler(Looper.getMainLooper()).postDelayed({
+                    val intent =Intent(this, DashboardActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                }, 200)
+            }
+        }
+        else{
+            if(user.profileCompleted==0) {
+                Handler(Looper.getMainLooper()).postDelayed({
+                    val intent = Intent(this, CounselorProfileActivity::class.java)
+                    intent.putExtra(Constants.EXTRA_USER_DETAILS,user)
+                    startActivity(intent)
+                    finish()
+                }, 200)
+            }
+            else
+            {
+                Handler(Looper.getMainLooper()).postDelayed({
+                    val intent =Intent(this, DashboardActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                }, 200)
+            }
+        }
 
 
-        if(user.profileCompleted==0) {
-            Handler(Looper.getMainLooper()).postDelayed({
-                val intent = Intent(this, ProfileActivity::class.java)
-                intent.putExtra(Constants.EXTRA_USER_DETAILS,user)
-                startActivity(intent)
-                finish()
-            }, 200)
-        }
-        else
-        {
-            Handler(Looper.getMainLooper()).postDelayed({
-                val intent =Intent(this, DashboardActivity::class.java)
-                startActivity(intent)
-                finish()
-            }, 200)
-        }
 
 
     }
