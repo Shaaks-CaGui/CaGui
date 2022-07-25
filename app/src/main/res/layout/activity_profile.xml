@@ -32,17 +32,37 @@
 
     <FrameLayout
         android:layout_width="wrap_content"
-        android:layout_marginTop="25sp"
+        android:layout_marginTop="15sp"
         android:layout_marginBottom="20sp"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        >
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/user_image"
-            android:layout_width="150sp"
-            android:layout_height="150sp"
-            android:layout_gravity="center"
-            android:src="@drawable/profile_icon"
-            android:contentDescription="TODO" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_image"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:contentDescription="TODO"
+                android:src="@drawable/profile_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_select_profile"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/add_photo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </FrameLayout>
 
 

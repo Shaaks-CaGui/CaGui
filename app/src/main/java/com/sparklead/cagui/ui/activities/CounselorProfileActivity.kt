@@ -47,15 +47,29 @@ class CounselorProfileActivity : BaseActivity() , View.OnClickListener {
         {
             title_counselor_profile.text = "Complete Profile"
             et_name_counselor_profile.isEnabled = true
-
+            iv_select_counselor_profile.setImageDrawable(resources.getDrawable(R.drawable.add_photo))
         }else{
 
             title_counselor_profile.text = "Edit Profile"
             GlideLoader(this).loadUserPicture(mUserDetails.image,user_counselor_image)
 
+            iv_select_counselor_profile.setImageDrawable(resources.getDrawable(R.drawable.edit_icon))
+
             if(mUserDetails.phone != 0L)
             {
                 et_phoneNo_profile.setText(mUserDetails.phone.toString())
+            }
+            if(mUserDetails.linkedin.isNotEmpty())
+            {
+                et_linkedin_counselor_profile.setText(mUserDetails.linkedin)
+            }
+            if(mUserDetails.resume.isNotEmpty())
+            {
+                et_resume_counselor_profile.setText(mUserDetails.resume)
+            }
+            if(mUserDetails.fieldExpert.isNotEmpty())
+            {
+                et_expert_counselor_profile.setText(mUserDetails.fieldExpert)
             }
             if(mUserDetails.gender== Constants.MALE)
             {
@@ -70,7 +84,7 @@ class CounselorProfileActivity : BaseActivity() , View.OnClickListener {
 
         user_counselor_image.setOnClickListener(this)
         btn_counselor_done.setOnClickListener(this)
-
+        iv_select_profile.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -78,6 +92,31 @@ class CounselorProfileActivity : BaseActivity() , View.OnClickListener {
             when(v.id){
 
                 R.id.user_counselor_image-> {
+
+                    // Here we will check if the permission is already allowed or we need to request for it.
+                    // First of all we will check the READ_EXTERNAL_STORAGE permission and if it is not allowed we will request for the same.
+                    if (ContextCompat.checkSelfPermission(
+                            this,
+                            android.Manifest.permission.READ_EXTERNAL_STORAGE
+                        )
+                        == PackageManager.PERMISSION_GRANTED
+                    ) {
+                        Constants.showImageChooser(this)
+//                        showErrorSnackBar("You already have the storage permission.", false)
+                    } else {
+
+                        /*Requests permissions to be granted to this application. These permissions
+                         must be requested in your manifest, they should not be granted to your app,
+                         and they should have protection level*/
+
+                        ActivityCompat.requestPermissions(
+                            this,
+                            arrayOf(android.Manifest.permission.READ_EXTERNAL_STORAGE),
+                            Constants.READ_STORAGE_PERMISSION_CODE_COUNSELOR
+                        )
+                    }
+                }
+                R.id.iv_select_counselor_profile-> {
 
                     // Here we will check if the permission is already allowed or we need to request for it.
                     // First of all we will check the READ_EXTERNAL_STORAGE permission and if it is not allowed we will request for the same.
