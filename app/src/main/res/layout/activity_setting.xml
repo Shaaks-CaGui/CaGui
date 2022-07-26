@@ -30,7 +30,7 @@
                     android:textAlignment="center"
                     android:paddingStart="-45sp"
                     android:textColor="@color/white"
-                    android:textSize="32sp" />
+                    android:textSize="26sp" />
 
             </androidx.appcompat.widget.Toolbar>
 
@@ -67,7 +67,7 @@
             android:paddingRight="7sp"
             android:text="Edit"
             android:textColor="@color/third_color"
-            android:textSize="24sp" />
+            android:textSize="21sp" />
 
 
         <TextView
@@ -79,50 +79,30 @@
             android:layout_marginTop="30sp"
             android:text="Aditya"
             android:textColor="#605F5F"
-            android:textSize="25sp" />
-
-        <TextView
-            android:id="@+id/tv_gender"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv_name"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="3sp"
-            android:text="Male"
-            android:textColor="#A8A5A5"
             android:textSize="22sp" />
+
 
         <TextView
             android:id="@+id/tv_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_gender"
+            android:layout_below="@id/tv_name"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="3sp"
             android:text="adityagupta@gmail.com"
             android:textColor="#A8A5A5"
-            android:textSize="22sp" />
+            android:textSize="16sp" />
 
-        <TextView
-            android:id="@+id/tv_mobile_number"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv_email"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="3sp"
-            android:text="123456789"
-            android:textColor="#A8A5A5"
-            android:textSize="22sp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_logout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_mobile_number"
+            android:layout_below="@id/tv_email"
             android:layout_gravity="center"
-            android:layout_marginStart="20sp"
+            android:layout_marginStart="40sp"
             android:layout_marginTop="20sp"
-            android:layout_marginEnd="20sp"
+            android:layout_marginEnd="40sp"
             android:layout_marginBottom="20sp"
             android:background="@color/third_color"
             android:foreground="?attr/selectableItemBackground"

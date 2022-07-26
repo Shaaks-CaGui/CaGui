@@ -55,6 +55,7 @@ class CounselorProfileActivity : BaseActivity() , View.OnClickListener {
 
             iv_select_counselor_profile.setImageDrawable(resources.getDrawable(R.drawable.edit_icon))
 
+
             if(mUserDetails.phone != 0L)
             {
                 et_phoneNo_profile.setText(mUserDetails.phone.toString())

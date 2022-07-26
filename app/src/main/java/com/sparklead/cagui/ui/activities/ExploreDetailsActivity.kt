@@ -1,5 +1,6 @@
 package com.sparklead.cagui.ui.activities
 
+import android.net.Uri
 import android.os.Bundle
 import android.telecom.Call
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -14,6 +15,8 @@ class ExploreDetailsActivity : BaseActivity() {
 
     lateinit var mTitle : String
     lateinit var mDetails :String
+    private lateinit var mImage : String
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_explore_details)
@@ -21,6 +24,12 @@ class ExploreDetailsActivity : BaseActivity() {
         supportActionBar?.hide()
 
         mTitle = intent.getStringExtra(Constants.EXTRA_TITLE)!!
+        mImage = intent.getStringExtra(Constants.EXTRA_IMAGE)!!
+
+        val uri = Uri.parse(mImage)
+        iv_branch_image.setImageURI(uri)
+
+        println(uri)
 
         tv_title_explore_details.text = mTitle
         tv_title_heading.text = mTitle

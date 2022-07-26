@@ -35,25 +35,32 @@ class ExploreFragment : Fragment() {
 
         cv1.setOnClickListener {
             val intent = Intent(context,ExploreDetailsActivity::class.java)
+            val image = "android.resource://com.sparklead.cagui/drawable/account"
+            intent.putExtra(Constants.EXTRA_IMAGE,image)
             intent.putExtra(Constants.EXTRA_TITLE,"Accounting")
             startActivity(intent)
         }
         cv2.setOnClickListener {
             val intent = Intent(context,ExploreDetailsActivity::class.java)
+            val image = "android.resource://com.sparklead.cagui/drawable/aerospace"
+            intent.putExtra(Constants.EXTRA_IMAGE,image)
             intent.putExtra(Constants.EXTRA_TITLE,"Aerospace")
             startActivity(intent)
         }
         cv3.setOnClickListener {
             val intent = Intent(context,ExploreDetailsActivity::class.java)
+            val image = "android.resource://com.sparklead.cagui/drawable/agriculture"
+            intent.putExtra(Constants.EXTRA_IMAGE,image)
             intent.putExtra(Constants.EXTRA_TITLE,"Agriculture")
             startActivity(intent)
         }
         cv4.setOnClickListener {
             val intent = Intent(context,ExploreDetailsActivity::class.java)
+            val image = "android.resource://com.sparklead.cagui/drawable/aquaculture"
+            intent.putExtra(Constants.EXTRA_IMAGE,image)
             intent.putExtra(Constants.EXTRA_TITLE,"Aquaculture")
             startActivity(intent)
         }
         return root
     }
-
 }

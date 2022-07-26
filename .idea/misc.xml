@@ -11,6 +11,8 @@
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/card_background.xml" value="0.2115" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/circle_dialog.xml" value="0.236" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/edit_background.xml" value="0.236" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/gradient_1.xml" value="0.2" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/gradient_2.xml" value="0.236" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/ic_baseline_alternate_email_24.xml" value="0.236" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.236" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.236" />
@@ -27,6 +29,7 @@
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/search_background.xml" value="0.2115" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/search_background_explore.xml" value="0.2115" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/search_background_faqs.xml" value="0.2115" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/splash_screen_background.xml" value="0.236" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/drawable/view_pager_background.xml" value="0.2305" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout-v28/activity_explore_details.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/layout/activity_basic.xml" value="0.25416666666666665" />
@@ -60,6 +63,8 @@
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/menu/dashboard_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/menu/home_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.236" />
+        <entry key="..\:/Users/91914/AndroidStudioProjects/CaGui/app/src/main/res/mipmap-anydpi-v26/logo.xml" value="0.236" />
       </map>
     </option>
   </component>

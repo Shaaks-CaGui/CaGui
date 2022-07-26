@@ -20,6 +20,7 @@ class SettingActivity : BaseActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_setting)
 
+
 //        supportActionBar?.hide()
 
         setupActionBar()
@@ -57,11 +58,11 @@ class SettingActivity : BaseActivity(), View.OnClickListener {
 
                 R.id.btn_logout ->
                 {
-                    FirebaseAuth.getInstance().signOut()
-                    val intent =Intent(this,SignInActivity::class.java)
-                    intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
-                    startActivity(intent)
-                    finish()
+//                    FirebaseAuth.getInstance().signOut()
+//                    val intent =Intent(this,SignInActivity::class.java)
+//                    intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+//                    startActivity(intent)
+//                    finish()
                 }
             }
         }
@@ -82,9 +83,7 @@ class SettingActivity : BaseActivity(), View.OnClickListener {
 
         GlideLoader(this).loadUserPicture(user.image,user_image_setting1)
         tv_name.text = "Hi, ${user.name}"
-        tv_gender.text = user.gender
         tv_email.text = user.email
-        tv_mobile_number.text = "${user.phone}"
     }
 
     override fun onResume() {

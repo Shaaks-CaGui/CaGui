@@ -8,7 +8,8 @@ import android.webkit.MimeTypeMap
 
 object Constants {
 
-    val EXTRA_TITLE : String = "title"
+    const val EXTRA_TITLE : String = "title"
+    const val EXTRA_IMAGE : String = "image"
     const val USERS :String = "users"
 
 

@@ -18,9 +18,9 @@
         />
 
     <item
-        android:id="@+id/navigation_admissions"
+        android:id="@+id/navigation_examination"
         android:icon="@drawable/admission"
-        android:title="@string/title_admissions"
+        android:title="@string/title_examination"
         app:cnb_iconColor = "@color/first_color"
         />
 

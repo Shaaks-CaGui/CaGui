@@ -1,5 +1,6 @@
 package com.sparklead.cagui.ui.activities
 
+import android.net.Uri
 import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -16,8 +17,8 @@ import kotlinx.android.synthetic.main.activity_explore_details.*
 class BranchInfoActivity : BaseActivity() {
 
     private lateinit var mTitleInfo : String
-    private lateinit var mBranch :String
-    private lateinit var mTitle :String
+    private lateinit var mBranch : String
+    private lateinit var mTitle : String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,9 +38,6 @@ class BranchInfoActivity : BaseActivity() {
 
         tv_title_explore_details_info.text = mBranch
 
-        println(mBranch)
-        println(mTitle)
-        println(mTitleInfo)
     }
 
     override fun onResume() {

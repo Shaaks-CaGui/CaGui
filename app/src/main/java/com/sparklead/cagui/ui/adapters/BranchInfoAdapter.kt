@@ -65,7 +65,7 @@ class BranchInfoAdapter(
             else{
                 holder.itemView.iv_visible_arrow1.setImageResource(R.drawable.down_arrow)
             }
-            holder.itemView.tv_details_info1.text = overview
+            holder.itemView.tv_details_info1.text = overview.replace("\\n", "\n")
             holder.itemView.btn_speak.setOnClickListener {
 
                 //implement speak option.....

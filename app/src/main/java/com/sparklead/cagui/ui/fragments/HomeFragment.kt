@@ -24,7 +24,6 @@ class HomeFragment : BaseFragment() {
 
         activity?.window!!.statusBarColor = activity!!.getColor(R.color.third_color)
 
-
     }
 
     override fun onCreateView(

@@ -23,15 +23,15 @@
         tools:layout="@layout/fragment_explore" >
         <action
             android:id="@+id/action_navigation_explore_to_navigation_admissions"
-            app:destination="@id/navigation_admissions"
+            app:destination="@id/navigation_examination"
             app:enterAnim="@anim/from_left" />
     </fragment>
 
     <fragment
-        android:id="@+id/navigation_admissions"
-        android:name="com.sparklead.cagui.ui.fragments.AdmissionFragment"
-        android:label="@string/title_admissions"
-        tools:layout="@layout/fragment_admission" >
+        android:id="@+id/navigation_examination"
+        android:name="com.sparklead.cagui.ui.fragments.ExaminationFragment"
+        android:label="@string/title_examination"
+        tools:layout="@layout/fragment_examination" >
         <action
             android:id="@+id/action_navigation_admissions_to_navigation_faqs"
             app:destination="@id/navigation_faqs"
@@ -40,7 +40,7 @@
 
     <fragment
         android:id="@+id/navigation_faqs"
-        android:name="com.sparklead.cagui.ui.fragments.AdmissionFragment"
+        android:name="com.sparklead.cagui.ui.fragments.ExaminationFragment"
         android:label="@string/title_faqs"
         tools:layout="@layout/fragment_faqs" />
 </navigation>

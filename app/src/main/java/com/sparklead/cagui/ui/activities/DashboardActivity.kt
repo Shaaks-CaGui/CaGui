@@ -1,13 +1,8 @@
 package com.sparklead.cagui.ui.activities
 
-import android.app.PendingIntent.getActivity
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentTransaction
-import androidx.fragment.app.commit
 import com.sparklead.cagui.R
-import com.sparklead.cagui.ui.fragments.AdmissionFragment
+import com.sparklead.cagui.ui.fragments.ExaminationFragment
 import com.sparklead.cagui.ui.fragments.ExploreFragment
 import com.sparklead.cagui.ui.fragments.FAQsFragment
 import com.sparklead.cagui.ui.fragments.HomeFragment
@@ -38,8 +33,8 @@ class DashboardActivity : BaseActivity() {
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.nav_host_fragment_activity_dashboard, exploreFragment).commit()
                 }
-                R.id.navigation_admissions -> {
-                    val admissionFragment = AdmissionFragment()
+                R.id.navigation_examination -> {
+                    val admissionFragment = ExaminationFragment()
 
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.nav_host_fragment_activity_dashboard, admissionFragment).commit()
