@@ -2,6 +2,7 @@ package com.sparklead.cagui.ui.adapters
 
 import android.content.Context
 import android.opengl.Visibility
+import android.speech.tts.TextToSpeech
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,7 +11,9 @@ import com.sparklead.cagui.R
 import com.sparklead.cagui.models.Info
 import com.sparklead.cagui.models.Questions
 import kotlinx.android.synthetic.main.item_list_details_info.view.*
+import java.util.*
 
+lateinit var tts: TextToSpeech
 
 class BranchInfoAdapter(
     private val context: Context,
@@ -36,6 +39,17 @@ class BranchInfoAdapter(
     var isVisible8 = false
     var isVisible9 = false
     var isVisible10 = false
+
+    var isVisible1_1 = false
+    var isVisible2_1 = false
+    var isVisible3_1 = false
+    var isVisible4_1 = false
+    var isVisible5_1 = false
+    var isVisible6_1 = false
+    var isVisible7_1 = false
+    var isVisible8_1 = false
+    var isVisible9_1 = false
+    var isVisible10_1 = false
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return MyViewHolder(
@@ -66,10 +80,30 @@ class BranchInfoAdapter(
                 holder.itemView.iv_visible_arrow1.setImageResource(R.drawable.down_arrow)
             }
             holder.itemView.tv_details_info1.text = overview.replace("\\n", "\n")
+
+            holder.itemView.btn_speak.visibility = if(!isVisible1_1) View.VISIBLE else View.GONE
+            holder.itemView.btn_mute.visibility = if(isVisible1_1) View.VISIBLE else View.GONE
             holder.itemView.btn_speak.setOnClickListener {
-
+                isVisible1_1 =! isVisible1_1
+                notifyItemChanged(position)
                 //implement speak option.....
+                tts = TextToSpeech(context,TextToSpeech.OnInitListener {
+                    if( it ==TextToSpeech.SUCCESS){
+                        tts.language = Locale.US
+                        tts.setSpeechRate(1.0f)
+                        tts.speak(overview.toString() ,TextToSpeech.QUEUE_ADD,null)
 
+                    }
+                })
+            }
+            holder.itemView.btn_mute.setOnClickListener {
+                isVisible1_1 =! isVisible1_1
+                notifyItemChanged(position)
+//                if(tts.isSpeaking)
+//                {
+                    tts.stop()
+                    tts.shutdown()
+//                }
             }
 
             //path

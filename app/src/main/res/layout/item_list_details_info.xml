@@ -82,6 +82,15 @@
                                 android:src="@drawable/speak"
                                 android:scaleType="centerCrop"
                                 />
+                            <ImageView
+                                android:id="@+id/btn_mute"
+                                android:layout_width="40sp"
+                                android:visibility="gone"
+                                android:layout_height="40sp"
+                                android:src="@drawable/mute"
+                                android:scaleType="centerCrop"
+                                />
+
 
                         </LinearLayout>
 

@@ -30,7 +30,7 @@ class SplashScreenActivity : AppCompatActivity() {
         animationDrawable.start()
 
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, SignInActivity::class.java))
+            startActivity(Intent(this, DashboardActivity::class.java))
             finish()
         },3000)
     }
